@@ -7,3 +7,5 @@ let baseName = path.basename('../Files/file.txt') //gives the actual file name
 console.log(baseName)
 console.log(__filename) 
 console.log(__dirname)
+let npath = path.resolve('../Files/file.txt')
+console.log(npath)
