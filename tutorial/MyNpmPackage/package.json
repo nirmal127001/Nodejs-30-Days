@@ -1,0 +1,11 @@
+{
+  "name": "basic_calci",
+  "version": "1.0.0",
+  "description": "This is created while learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nirmal",
+  "license": "ISC"
+}
