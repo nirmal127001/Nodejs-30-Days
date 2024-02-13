@@ -1,5 +1,6 @@
 const express = require('express')
 const myMiddleWares = require('./middlewares/middle.js')
+const morgan = require('morgan') //third party middleware to get info about the request you are sending
 
 const app = express()
 //middleware starts
@@ -15,7 +16,10 @@ app.use(function(req,res,next){ //next is used to pass the control from middlewa
     next()
 })
 
-app.use(myMiddleWares)
+app.use(myMiddleWares) //custom middlewares
+
+// app.use(morgan()) //3rd party middleware
+app.use(morgan('tiny')) //tiny is use to short the detailed info
 //middleware ends
 
 const courses = [
